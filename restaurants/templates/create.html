@@ -4,7 +4,7 @@
 	<title>Create</title>
 </head>
 <body>
-<form action = "{% url 'restaurant-create' %}" method=”POST”>
+<form action = "{% url 'restaurant-create' %}" method="POST">
 	{% csrf_token %}
 	{{form.as_p}}
 	<button> Submit </button>
